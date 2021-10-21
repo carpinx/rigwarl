@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+@font-face {
+    font-family: ZingRustBase;
+    src: url(../fonts/zingrustbase.woff);
+}
+
+@font-face {
+    font-family: ZingRust1;
+    src: url(../fonts/zingrust1.woff);
+}
+
+@font-face {
+    font-family: ZingRust2;
+    src: url(../fonts/zingrust2.woff);
+}
+
+@font-face {
+    font-family: ZingRustScript;
+    src: url(../fonts/zingrustscript.woff);
+}
+
+$fontMansalva: 'Mansalva', cursive;
+$fontOpen: 'Open Sans', sans-serif;
+$fontEnglish: 'IM Fell English SC', serif;
+$fontZRBase: 'ZingRustBase', sans-serif;
+$fontZRScript: 'ZingRustScript', sans-serif;
+$fontZR1: 'ZingRust1', sans-serif;
+$fontZR2: 'ZingRust2', sans-serif;
+
+$amarillo: #fb0;
+$negro: #0f0d12;
+$gris: #616161;
+$blanco: #fff;

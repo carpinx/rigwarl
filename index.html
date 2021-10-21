@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rigwarl - The Bristleback</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <script src="https://kit.fontawesome.com/5defac5f80.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+      <div class="container-fluid hero" id="home">
+          <div class="row heroflex">
+            <div class="col-md-5">
+              <video class="hero__image" poster="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/bristleback.png" muted autoplay="" preload="auto" loop="" playsinline=""><source type="video/webm" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/bristleback.webm"><img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/bristleback.png"></video>
+            </div>
+            <div class="col-md-7">
+                <div class="hero__text">
+                    <h1 class="hero__text--title">
+                        Rigwarl
+                    </h1>
+                    <h4 class="hero__text--subtitle">
+                        The Bristleback
+                    </h4>
+                </div>
+            </div>
+          </div>
+      </div>
+      <nav class="navbar navbar-expand navbar-light bg-light">
+          <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#lore">Historia</a></li>
+                <li class="nav-item"><a class="nav-link" href="#habilities">Habilidades</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <section class="lore" id="lore">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <h1 class="lore__titulo">
+                Historia
+              </h1>
+              <p class="lore__parrafo">
+                Nunca dispuesto a darle la espalda a una pelea, a Rigwarl se le conocía por <b>enfrentarse a los camorristas más grandes y crueles que podía encontrar</b>. Apodado Bristleback por las muchedumbres de borrachos, se metía en peleas en la trastienda de todos los bares de carretera entre Slom y Elze, hasta que finalmente sus hazañas llamaron la atención de un camarero en busca de alguien que hiciera cumplir las normas. A cambio de algo que beber, Bristleback <b>fue contratado para pasar cuentas, mantener la paz y romper una o dos piernas de tanto en tanto</b> (o cinco en el caso de un arácnido desafortunado).
+              </p>
+              <p class="lore__parrafo lore__parrafo--2">
+                Tras dejarse llevar en una noche de alegría durante la cual daño físico fue repartido por igual entre clientes problemáticos y su hígado, Bristleback encontró por fin <b>un rival digno</b>. "Sus colmillos me ofenden, señor", se le oyó farfullar a un tipo particularmente grande de los páramos del norte al que le había llegado la hora de pagar. Lo que aconteció después fue <b>una pelea de las que hacen época</b>. Una docena de luchadores se apuntaron. No quedó ni un taburete sin romper y al final, sucedió lo imposible: la cuenta se quedó sin pagar. A lo largo de las siguientes semanas, las heridas de Bristleback sanaron y sus espinas volvieron a crecer; pero su honor es un asunto más espinoso. Pagó la cuenta de su propio bolsillo, jurando encontrar a este norteño y <b>hacer justicia</b>. Y entonces hizo algo que nunca había hecho: se entrenó y al hacerlo hizo un descubrimiento asombroso sobre sí mismo. Una sonrisa se dibujó en sus dientes en el momento en que agitó sus espinas. <b>Darle la espalda a una pelea podría resultar siendo idóneo</b>.
+              </p>
+            </div>
+            <div class="col-lg-5">
+              <div class="details">
+                <h2 class="details__titulo">
+                  Detalles
+                </h2>
+                <div class="details__type">
+                  <img src="img/hero_strength.png">
+                  <p>Fuerza</p>
+                </div>
+                <div class="details__primera">
+                  <div>
+                    <span>Tipo de ataque:</span>
+                    <span><i class="fas fa-hand-rock"></i> Cuerpo a cuerpo</span>
+                  </div>
+                  <div>
+                    <span>Complejidad:</span>
+                    <span class="complexity"><i class="fas fa-square"></i> <i class="far fa-square"></i> <i class="far fa-square"></i></span>
+                  </div>
+                </div>
+                <hr>
+                <div class="details__attributes">
+                  <div class="details__attributes--healthmana">
+                    <img src="img/healthmana.png">
+                    <div class="health">
+                      <p class="health__1">
+                        640
+                      </p>
+                      <p class="health__2">
+                        +2.5
+                      </p>
+                    </div>
+                    <div class="mana">
+                      <p class="mana__1">
+                        243
+                      </p>
+                      <p class="mana__2">
+                        +0.9
+                      </p>
+                    </div>
+                  </div>
+                  <div class="details__attributes--att">
+                    <div class="strength">
+                      <img src="img/hero_strength.png">
+                      <p class="strength__1">
+                        22
+                      </p>
+                      <p class="strength__2">
+                        +2.9
+                      </p>
+                    </div>
+                    <div class="agility">
+                      <img src="img/hero_agility.png">
+                      <p class="agility__1">
+                        17
+                      </p>
+                      <p class="agility__2">
+                        +1.8
+                      </p>
+                    </div>
+                    <div class="intelligence">
+                      <img src="img/hero_intelligence.png">
+                      <p class="intelligence__1">
+                        14
+                      </p>
+                      <p class="intelligence__2">
+                        +2.8
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="details__roles">
+                  <div class="details__roles--role">
+                    <p>Asesino</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="details__roles--role">
+                    <p>Apoyo</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="details__roles--role">
+                    <p>Devastador</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="details__roles--role">
+                    <p>Incapacitador</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="details__roles--role">
+                    <p>Jungla</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="details__roles--role">
+                    <p>Resistente</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="details__roles--role">
+                    <p>Evasivo</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="details__roles--role">
+                    <p>Presionador</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="details__roles--role">
+                    <p>Iniciador</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="habilities" id="habilities">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="habilities__titulo">
+                Habilidades
+              </h1>
+              <ul class="nav nav-tabs tabs" id="habilities__tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="habilidad1-tab" data-bs-toggle="tab" data-bs-target="#habilidad1" type="button" role="tab" aria-controls="habilidad1" aria-selected="true">
+                    <img src="img/habilidad1.png">
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="habilidad2-tab" data-bs-toggle="tab" data-bs-target="#habilidad2" type="button" role="tab" aria-controls="habilidad2" aria-selected="false">
+                    <img src="img/habilidad2.png">
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="habilidad3-tab" data-bs-toggle="tab" data-bs-target="#habilidad3" type="button" role="tab" aria-controls="habilidad3" aria-selected="false">
+                    <img src="img/habilidad3.png">
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="habilidad4-tab" data-bs-toggle="tab" data-bs-target="#habilidad4" type="button" role="tab" aria-controls="habilidad4" aria-selected="false">
+                    <img src="img/habilidad4.png">
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="habilidad5-tab" data-bs-toggle="tab" data-bs-target="#habilidad5" type="button" role="tab" aria-controls="habilidad5" aria-selected="false">
+                    <img src="img/habilidad5.png">
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="habilidad6-tab" data-bs-toggle="tab" data-bs-target="#habilidad6" type="button" role="tab" aria-controls="habilidad6" aria-selected="false">
+                    <img src="img/habilidad6.png">
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="habilidad1" role="tabpanel" aria-labelledby="habilidad1-tab">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-6 video">
+                        <video class="heropage_HeroPortrait_22nJ5" muted autoplay="" preload="auto" loop="" playsinline="" poster="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/bristleback/bristleback_viscous_nasal_goo.jpg"><source type="video/webm" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/bristleback/bristleback_viscous_nasal_goo.webm"><source type="video/mp4" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/bristleback/bristleback_viscous_nasal_goo.mp4"></video>
+                      </div>
+                      <div class="col-md-6 tab-content__info">
+                        <h4 class="tab-content__info--titulo">Viscosidad Nasal</h4>
+                        <p class="tab-content__info--texto">En inglés: <span class="en">Viscous Nasal Goo</span>.</p>
+                        <p class="tab-content__info--texto">Cubre a un objetivo con mocos, haciendo que pierda armadura y velocidad de movimiento. Múltiples lanzamientos se acumulan y restablecen la duración.</p>
+                        <div class="tab-content__info--columnitas">
+                          <div>
+                            <span>Habilidad:</span>
+                            <span>Unidad objetivo</span>
+                          </div>
+                          <div>
+                            <span>Atraviesa BKB:</span>
+                            <span>No</span>
+                          </div>
+                          <div>
+                            <span>Afecta:</span>
+                            <span>Unidades enemigas</span>
+                          </div>
+                          <div>
+                            <span>Disipable:</span>
+                            <span>Sí</span>
+                          </div>
+                        </div>
+                        <div class="tab-content__info--filitas">
+                          <div>
+                            <span>Duración:</span>
+                            <span>5.0</span>
+                          </div>
+                          <div>
+                            <span>Pérdida de armadura base:</span>
+                            <span>2.0</span>
+                          </div>
+                          <div>
+                            <span>Pérdida de armadura por acumulación:</span>
+                            <span>1.5 / 2.0 / 2.5 / 3.0</span>
+                          </div>
+                          <div>
+                            <span>Ralentización de movimiento base:</span>
+                            <span>15%</span>
+                          </div>
+                          <div>
+                            <span>Ralentización de movimiento por acumulación:</span>
+                            <span>3% / 6% / 9% / 12%</span>
+                          </div>
+                          <div>
+                            <span>Límite de acumulaciones:</span>
+                            <span>4</span>
+                          </div>
+                          <div>
+                            <span>Radio con cetro:</span>
+                            <span>800</span>
+                          </div>
+                          <div>
+                            <span>Límite de acumulaciones con cetro:</span>
+                            <span>7</span>
+                          </div>
+                        </div>
+                        <div class="tab-content__info--cdmana">
+                          <div>
+                            <span><i class="far fa-clock"></i></span>
+                            <span>1.8</span>
+                          </div>
+                          <div>
+                            <span><i class="fas fa-square"></i></span>
+                            <span>12 / 16 / 20 / 24</span>
+                          </div>
+                        </div>
+                        <div class="tab-content__info--footer">
+                          Habiéndose resfriado tras caer en la nieve, Bristleback ahora lo utiliza a su favor.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="habilidad2" role="tabpanel" aria-labelledby="habilidad2-tab">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-6 video">
+                        <video class="heropage_HeroPortrait_22nJ5" muted autoplay="" preload="auto" loop="" playsinline="" poster="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/bristleback/bristleback_quill_spray.jpg"><source type="video/webm" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/bristleback/bristleback_quill_spray.webm"><source type="video/mp4" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/bristleback/bristleback_quill_spray.mp4"></video>
+                      </div>
+                      <div class="col-md-6 tab-content__info">
+                        <h4 class="tab-content__info--titulo">Lluvia de espinas</h4>
+                        <p class="tab-content__info--texto">En inglés: <span class="en">Quill Spray</span>.</p>
+                        <p class="tab-content__info--texto">Rocía a las unidades enemigas con espinas, infligiendo daño en un área alrededor de Bristleback. Inflige daño adicional por cada vez que una unidad haya sido rociada por Lluvia de Espinas en los últimos 14.0 segundos.</p>
+                        <div class="tab-content__info--columnitas">
+                          <div>
+                            <span>Habilidad:</span>
+                            <span>Sin objetivo</span>
+                          </div>
+                          <div>
+                            <span>Atraviesa BKB:</span>
+                            <span>Sí</span>
+                          </div>
+                          <div>
+                            <span>Tipo de daño:</span>
+                            <span class="text-danger">Físico</span>
+                          </div>
+                          <div>
+                            <span>Disipable:</span>
+                            <span>No</span>
+                          </div>
+                        </div>
+                        <div class="tab-content__info--filitas">
+                          <div>
+                            <span>Radio:</span>
+                            <span>700</span>
+                          </div>
+                          <div>
+                            <span>Daño base de las espinas:</span>
+                            <span>25.0 / 45.0 / 65.0 / 85.0</span>
+                          </div>
+                          <div>
+                            <span>Daño por acumulación de espinas:</span>
+                            <span>28.0 / 30.0 / 32.0 / 34.0</span>
+                          </div>
+                          <div>
+                            <span>Duración de las acumulaciones:</span>
+                            <span>14</span>
+                          </div>
+                          <div>
+                            <span>Daño máximo:</span>
+                            <span>550</span>
+                          </div>
+                        </div>
+                        <div class="tab-content__info--cdmana">
+                          <div>
+                            <span><i class="far fa-clock"></i></span>
+                            <span>3</span>
+                          </div>
+                          <div>
+                            <span><i class="fas fa-square"></i></span>
+                            <span>35</span>
+                          </div>
+                        </div>
+                        <div class="tab-content__info--footer">
+                          El honor de un matón puede ser un asunto espinoso. Lo mismo ocurre con sus púas.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="habilidad3" role="tabpanel" aria-labelledby="habilidad3-tab">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-6 video">
+                        <video class="heropage_HeroPortrait_22nJ5" muted autoplay="" preload="auto" loop="" playsinline="" poster="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/bristleback/bristleback_bristleback.jpg"><source type="video/webm" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/bristleback/bristleback_bristleback.webm"><source type="video/mp4" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/bristleback/bristleback_bristleback.mp4"></video>
+                      </div>
+                      <div class="col-md-6 tab-content__info">
+                        <h4 class="tab-content__info--titulo">Espalda espinosa</h4>
+                        <p class="tab-content__info--texto">En inglés: <span class="en">Bristleback</span>.</p>
+                        <p class="tab-content__info--texto">Bristleback recibe menos daño si le atacan por el lateral o por detrás. Si Bristleback recibe 210 de daño por detrás, lanza una Lluvia de Espinas del nivel actual.</p>
+                        <div class="tab-content__info--columnitas">
+                          <div>
+                            <span>Habilidad:</span>
+                            <span>Pasiva</span>
+                          </div>
+                        </div>
+                        <div class="tab-content__info--filitas">
+                          <div>
+                            <span>Reducción de daño lateral:</span>
+                            <span>8% / 12% / 16% / 20%</span>
+                          </div>
+                          <div>
+                            <span>Reducción de daño trasero:</span>
+                            <span>16% / 24% / 32% / 40%</span>
+                          </div>
+                          <div>
+                            <span>Umbral de daño:</span>
+                            <span>210</span>
+                          </div>
+                        </div>
+                        <div class="tab-content__info--footer">
+                          Darle la espalda a una pelea podría ser justo lo que necesitas.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="habilidad4" role="tabpanel" aria-labelledby="habilidad4-tab">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-6 video">
+                        <video class="heropage_HeroPortrait_22nJ5" muted autoplay="" preload="auto" loop="" playsinline="" poster="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/bristleback/bristleback_warpath.jpg"><source type="video/webm" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/bristleback/bristleback_warpath.webm"><source type="video/mp4" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/bristleback/bristleback_warpath.mp4"></video>
+                      </div>
+                      <div class="col-md-6 tab-content__info">
+                        <h4 class="tab-content__info--titulo">Senda de guerra</h4>
+                        <p class="tab-content__info--texto">En inglés: <span class="en">Warpath</span>.</p>
+                        <p class="tab-content__info--texto">Bristleback entra en un estado de furia cada vez que lanza un hechizo, aumentando su velocidad de movimiento y daño.</p>
+                        <div class="tab-content__info--columnitas">
+                          <div>
+                            <span>Habilidad:</span>
+                            <span>Pasiva</span>
+                          </div>
+                          <div>
+                            <span>Disipable:</span>
+                            <span>No</span>
+                          </div>
+                        </div>
+                        <div class="tab-content__info--filitas">
+                          <div>
+                            <span>Daño por acumulación:</span>
+                            <span>25 / 30 / 35</span>
+                          </div>
+                          <div>
+                            <span>Movimiento por acumulación:</span>
+                            <span>3% / 4% / 5%</span>
+                          </div>
+                          <div>
+                            <span>Duración de las acumulaciones:</span>
+                            <span>16.0 / 18.0 / 20.0</span>
+                          </div>
+                          <div>
+                            <span>Acumulaciones máximas:</span>
+                            <span>5 / 7 / 9</span>
+                          </div>
+                        </div>
+                        <div class="tab-content__info--footer">
+                          "¡Controla ese genio!", reprendía siempre su madre. Pero en una pelea, el mal genio puede llegar a ser útil.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="habilidad5" role="tabpanel" aria-labelledby="habilidad5-tab">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-6 video">
+                        <video class="heropage_HeroPortrait_22nJ5" muted autoplay="" preload="auto" loop="" playsinline="" poster="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/bristleback/bristleback_aghanims_shard.jpg"><source type="video/webm" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/bristleback/bristleback_aghanims_shard.webm"><source type="video/mp4" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/bristleback/bristleback_aghanims_shard.mp4"></video>
+                      </div>
+                      <div class="col-md-6 tab-content__info">
+                        <h4 class="tab-content__info--titulo">Bola de pelo</h4>
+                        <p class="tab-content__info--texto agh"><span>El Fragmento de Aghanim otorga una nueva habilidad.</span></p>
+                        <p class="tab-content__info--texto">En inglés: <span class="en">Hairball</span>.</p>
+                        <p class="tab-content__info--texto">Tose una bola de pelo llena de púas hacia la ubicación objetivo. La bola explota en el destino, impactando sobre los enemigos que se encuentren en un radio de 700 con Viscosidad Nasal y 2 Lluvias de Espinas.</p>
+                        <div class="tab-content__info--columnitas">
+                          <div>
+                            <span>Habilidad:</span>
+                            <span>Punto objetivo</span>
+                          </div>
+                          <div>
+                            <span>Atraviesa BKB:</span>
+                            <span>Sí</span>
+                          </div>
+                          <div>
+                            <span>Afecta a:</span>
+                            <span>Unidades enemigas</span>
+                          </div>
+                          <div>
+                            <span>Disipable:</span>
+                            <span>Sí</span>
+                          </div>
+                          <div>
+                            <span>Tipo de daño:</span>
+                            <span class="text-primary">Mágico</span>
+                          </div>
+                        </div>
+                        <div class="tab-content__info--cdmana">
+                          <div>
+                            <span><i class="far fa-clock"></i></span>
+                            <span>20</span>
+                          </div>
+                          <div>
+                            <span><i class="fas fa-square"></i></span>
+                            <span>100</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="habilidad6" role="tabpanel" aria-labelledby="habilidad6-tab">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-6 video">
+                        <video class="heropage_HeroPortrait_22nJ5" muted autoplay="" preload="auto" loop="" playsinline="" poster="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/bristleback/bristleback_aghanims_scepter.jpg"><source type="video/webm" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/bristleback/bristleback_aghanims_scepter.webm"><source type="video/mp4" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/bristleback/bristleback_aghanims_scepter.mp4"></video>
+                      </div>
+                      <div class="col-md-6 tab-content__info">
+                        <h4 class="tab-content__info--titulo">Viscosidad nasal</h4>
+                        <p class="tab-content__info--texto agh"><span>Habilidad del Cetro de Aghanim mejorada.</span></p>
+                        <p class="tab-content__info--texto">En inglés: <span class="en">Viscous Nasal Goo</span>.</p>
+                        <p class="tab-content__info--texto">Viscosidad Nasal se convierte en una habilidad de área de efecto sin objetivo y afecta a todos los enemigos que se encuentren dentro del alcance. Aumenta el límite de acumulaciones hasta 7.</p>
+                        <div class="tab-content__info--cdmana">
+                          <div>
+                            <span><i class="far fa-clock"></i></span>
+                            <span>1.8</span>
+                          </div>
+                          <div>
+                            <span><i class="fas fa-square"></i></span>
+                            <span>12 / 16 / 20 / 24</span>
+                          </div>
+                        </div>
+                        <div class="tab-content__info--footer">
+                          Habiéndose resfriado tras caer en la nieve, Bristleback ahora lo utiliza a su favor.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+          Carpincho © 2021
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
