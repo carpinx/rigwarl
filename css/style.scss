@@ -21,45 +21,6 @@ body {
     overflow-x: hidden;
 }
 
-.navbar {
-    background-color: $negro !important;
-    z-index: 99999;
-    position: sticky;
-    top: 0;
-    height: 14vh;
-    box-shadow: 0px 0px 10px #000;
-
-    @include tablet {
-        height: auto;
-    }
-
-    .navbar-nav {
-        width: 100%;
-        justify-content: space-around;
-
-        @include movil {
-            justify-content: space-evenly;
-        }
-
-        li {
-
-            a {
-                font-family: $fontZRBase;
-                color: $amarillo !important;
-                font-size: 4rem;
-
-                @include movil {
-                    font-size: 2.6rem;
-                }
-
-                &:hover {
-                    font-family: $fontZR1;
-                }
-            }
-        }
-    }
-}
-
 .hero {
     background-color: $negro;
     background-image: url('../img/hero__bg.jpg');
@@ -67,7 +28,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 86vh;
+    height: 100vh;
     overflow: hidden;
 
     @include tablet {
@@ -106,7 +67,7 @@ body {
 
     &__image {
         max-width: 140%;
-        transform: translateX(8rem) translateY(-16rem) rotateY(180deg);
+        transform: translateX(8rem) translateY(-12rem) rotateY(180deg);
         z-index: -1;
 
         @include tablet {
@@ -173,7 +134,7 @@ body {
     background-size: cover;
     background-position: top;
     overflow: hidden;
-    padding: 8rem 0;
+    padding: 4rem 0;
 
     @include movil {
         padding: 6rem 0 2rem 0;
@@ -199,6 +160,8 @@ body {
         color: $negro;
 
         @include movil {
+            text-align: center;
+            margin-bottom: 1rem;
             font-size: 6rem;
         }
     }
@@ -228,65 +191,110 @@ body {
     background-position: bottom;
     color: $blanco;
     width: 100%;
-    padding: 2rem 3rem;
+    padding: 2rem 3rem 3rem 3rem;
     font-family: $fontOpen;
     box-shadow: 0px 0px 10px #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "titulo titulo type type primera primera"
+        "attributes attributes roles roles stats stats";
+    margin-bottom: 2rem;
 
-    @include onlytablet {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    @include tablet {
         grid-template-areas: 
-        "title title primera primera primera type"
-        "attributes attributes attributes roles roles roles";
+        "titulo titulo titulo titulo titulo titulo"
+        "type type type attributes attributes attributes"
+        "primera primera primera attributes attributes attributes"
+        "roles roles roles stats stats stats"
+        ;
     }
 
-    hr {
-        margin: 3rem 0;
-        
-        @include onlytablet {
-            display: none;
-        }
+    @include movil {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "titulo"
+        "type"
+        "primera"
+        "attributes"
+        "roles"
+        "stats"
+        ;
     }
 
     &__titulo {
-        font-family: $fontZRBase;
-        font-size: 5rem;
+        grid-area: titulo;
+        font-family: $fontZR1;
         color: $amarillo;
+        font-size: 8rem;
 
-        @include onlytablet {
-            grid-area: title;
+        @include movil {
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 6rem;
         }
     }
 
     &__type {
+        grid-area: type;
         display: flex;
+        justify-content: center;
         align-items: center;
-        margin-bottom: 1rem;
 
-        @include onlytablet {
-            grid-area: type;
-        }
-        
         img {
             max-width: 40px;
-            margin-right: .3rem;
+            height: auto;
         }
 
         p {
-            margin: 0;
-            font-size: 1.8rem;
+            font-size: 2rem;
             text-transform: uppercase;
-            font-weight: 500;
+            margin-left: 1rem;
         }
     }
 
+    &__primera {
+        grid-area: primera;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        font-size: 1.4rem;
+
+        @include tablet {
+            align-items: center;
+            margin-top: -4rem;
+        }
+
+        @include movil {
+            margin-top: 0rem;
+            margin-bottom: 1rem;
+        }
+
+        > div {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+           > span {
+
+            &:first-child {
+                margin-right: .4rem;
+            }
+           } 
+        }
+    }
+    
     &__attributes {
+        grid-area: attributes;
         display: grid;
         grid-template-columns: .75fr 1fr;
         gap: 2rem;
+        border-right: 1px solid rgb(56, 56, 56);
 
-        @include onlytablet {
-            grid-area: attributes;
+        @include tablet {
+            border-right: none;
+            margin-bottom: 2rem;
         }
 
         &--healthmana {
@@ -367,11 +375,14 @@ body {
     }
 
     &__roles {
+        grid-area: roles;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        border-right: 1px solid rgb(56, 56, 56);
 
-        @include onlytablet {
-            grid-area: roles;
+        @include movil {
+            border-right: none;
+            margin-bottom: 2rem;
         }
 
         &--role {
@@ -397,42 +408,37 @@ body {
         }
     }
 
-    &__primera {
-        display: grid;
-        grid-template-columns: 1fr;
-        margin-bottom: 1.2rem;
+    &__stats {
+        grid-area: stats;
+        padding: 1rem 2rem;
 
-        @include onlytablet {
-            grid-area: primera;
-        }
-
-        span {
+        &--titulo {
             font-size: 1.4rem;
-            font-family: $fontOpen;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
 
-            &:nth-child(1) {
-                color: $gris;
-                text-transform: uppercase;
-            }
+        &--details {
+            display: flex;
+            flex-direction: column;
+            padding-top: 1rem;
 
-            &:nth-child(2) {
-                margin-left: 1rem;
-                color: $blanco;
-                text-transform: uppercase;
+            > div {
+                display: flex;
 
-                i {
-                    margin-right: .3rem;
-                }
-            }
+                > span {
+                    font-size: 1.4rem;
 
-            &.complexity {
-
-                i {
-                    transform: rotateZ(45deg);
-                    margin-right: .4rem;
+                    &:first-child {
+                        margin-right: .4rem;
+                    }
                 }
             }
         }
+    }
+
+    hr {
+        display: none;
     }
 }
 
@@ -441,7 +447,7 @@ body {
     background-image: url(../img/fondo__negro.png);
     background-size: cover;
     background-position: bottom;
-    padding: 8rem 0;
+    padding: 2rem 0;
     overflow: hidden;
 
     @include movil {
@@ -545,7 +551,7 @@ body {
                 font-size: 1.4rem;
                 background-color: #1c2e50;
                 border-radius: 4px;
-                padding: 0 .2rem;
+                padding: .2rem;
                 color: $blanco;
             }
 

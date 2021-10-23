@@ -4,12 +4,6 @@
     }
 }
 
-@mixin onlytablet {
-    @media screen and (min-width: 577px) and (max-width: 992px) {
-        @content;
-    }
-}
-
 @mixin movil {
     @media screen and (max-width: 576px) {
         @content;
